@@ -1,6 +1,6 @@
 # Pizza Ordering Interface
 
-#### _Create a website for a pizza company where a user can choose toppings and a size to order a pizza and see the final cost., 7/12/19
+#### Create a website for a pizza company where a user can choose toppings and a size to order a pizza and see the final cost., 7/12/19
 
 #### By Craig Hutler
 
