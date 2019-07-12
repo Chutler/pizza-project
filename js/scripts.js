@@ -15,14 +15,22 @@ Pizza.prototype.price = function() {
   var pieVeggie = this.veggie.length;
   debugger;
   if (pieSize === "Ten") {
-    return 10+(pieCheese*2)+(pieMeat*3)+(pieVeggie*2);
+    return 10 + (pieCheese*2) + (pieMeat*3) + (pieVeggie*2);
   } else if (pieSize === "Fourteen") {
-    return 14 +  (pieCheese*2) + (pieMeat*3) + (pieVeggie*2);
+    return 14 + (pieCheese*2) + (pieMeat*3) + (pieVeggie*2);
   } else {
-    return 18 +  (pieCheese*2) + (pieMeat*3) + (pieVeggie*2);
+    return 18 + (pieCheese*2) + (pieMeat*3) + (pieVeggie*2);
   }
 }  
-// I assume it's bad form to use a capitolized variable here but I wanted my final output in mixed (title) case without having to use a function  
+
+// I tried to set up the logic in the protoype with statements like so: 
+// return 10 + (this.cheese.length*2) + (this.Meat.length*3) + (this.veggie.length*2);
+// It seemed to choke so I had to set variables to those values...I still don't know why this.cheese.length wouldn't work
+
+// AND I assume it's bad form to use a capitolized variable for size but 
+// I wanted my final output in mixed (title) case without having to use a function  
+
+
 
 // User Interface for Pizza Party In the Front 
 
@@ -58,8 +66,7 @@ $(document).ready(function(){
     $('.meat').text(newOrder.meat);
     $('.veggie').text(newOrder.veggie);
 
-    // hide the order form div?
     $('#receipt').show();
-    debugger;
+  
   });
 });
