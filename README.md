@@ -18,7 +18,7 @@ Copy the files and drectory structure to your own webserver or local drive.
 
 ## Link to site on GitHub Pages
 
-[Link to site on GitHub Pages - TK](https://chutler.github.io/pizza-project/)
+[Link to site on GitHub Pages](https://chutler.github.io/pizza-project/)
 
 ## Known Bugs
 
