@@ -5,47 +5,90 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Johnny's: Order your pizza now!</title>
+    <title>Pizza Johnny's Fake Italian: Order your pizza now!</title>
   </head>
   <body>
-    <div class="container-fluid" id="pizza">
-        <h1 class="display-4">Order your pizza now:</h1>
+    <div class="container" id="pizza">
+        <h1 class="display-4">Select your size and toppings:</h1>
         
         <div class="row">
             <div class="col-md-12">
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <form id="order-form">
-                            <div class="form-group">
-                                <p>Choose Your Toppings:</p>
-                                <input type="checkbox" name="toppings" value="1"> Cheese<br>
-                                <input type="checkbox" name="toppings" value="3"> Pepperoni<br>
-                                <input type="checkbox" name="toppings" value="3"> Sausage<br>
-                                <input type="checkbox" name="toppings" value="3"> Bacon<br>
-                                <input type="checkbox" name="toppings" value="1"> Onions<br>
-                                <input type="checkbox" name="toppings" value="2"> Mushrooms<br>
-                                <input type="checkbox" name="toppings" value="2"> Green Pepper<br>
-                                <input type="checkbox" name="toppings" value="2"> Black Olives<br>
-                                <input type="checkbox" name="toppings" value="2"> Spinach<br>
-                                <input type="checkbox" name="toppings" value="2"> Pineapple<br>
-                            </div>
-                    </div> <!-- End Column 1 -->
-                    <div class="col-md-4">
-                            <div class="form-group">
-                                <p>What size?</p>
-                                <input type="checkbox" name="size" value="1"> 10 Inch<br>
-                                <input type="checkbox" name="size" value="3"> 12 Inch<br>
-                                <input type="checkbox" name="size" value="3"> 18 Inch<br>
-                            </div>
-                            <button type="submit">Make My Pizza</button>
-                            </form>
-                    </div> <!-- End Column 2 -->
-                </div><!-- End Internal Row -->
-            
-            </div> <!-- End Master Column-->
-        </div> <!-- End Master Row -->
-
+            </div> <!-- End Col / Row 1 -->    
+        </div> <!-- End Row 1 -->       
+            <div class="row">
+                <div class="col-md-4">
+                    <form id="order-form">
+                        <div class="form-group">
+                            <p class="label">What size pie?</p>
+                            <select class="form-control" id="size">
+                                <option value="Ten">10 Inch - $10.00</option>
+                                <option value="Fourteen">14 Inch - $14.00</option>
+                                <option value="Eighteen">18 Inch - $18.00</option>
+                            </select>
+                        </div>                              
+                </div> <!-- End Column 1 / Row 2 -->
+                <div class="col-md-4">
+                    <form id="order-form">
+                        <div class="form-group">
+                            <p class="label">Sauce?</p>
+                            <select class="form-control" id="sauce">
+                                <option value="Red">Red Sauce</option>
+                                <option value="White">White Sauce</option>
+                            </select>
+                        </div>                              
+                </div> <!-- End Column 2 / Row 2 -->
+                <div class="col-md-4">
+                    <!-- Empty Column -->
+                </div> <!-- End Column 3 / Row 2 -->
+            </div> <!-- End Row 2 -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <p class="label">Cheeses: ($2.00/ea)</p>
+                        <input type="checkbox" name="cheese" value=" Mozzarella"> Mozzarella<br>
+                        <input type="checkbox" name="cheese" value=" Provolone"> Provolone<br>
+                        <input type="checkbox" name="cheese" value=" Colby"> Colby<br>
+                        <input type="checkbox" name="cheese" value=" Cheddar"> Cheddar<br>
+                    </div>
+                </div>    
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <p class="label">Meats: ($3.00/ea)</p>
+                        <input type="checkbox" name="meat" value=" Pepperoni"> Pepperoni<br>
+                        <input type="checkbox" name="meat" value=" Fennel Sausage"> Fennel Sausage<br>
+                        <input type="checkbox" name="meat" value=" Chicken"> Chicken<br>
+                        <input type="checkbox" name="meat" value=" Bacon"> Bacon<br>
+                        <input type="checkbox" name="meat" value=" Ham"> Ham<br>
+                    </div>
+                </div>    
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <p class="label">Veggies: ($2.00/ea)</p>
+                        <input type="checkbox" name="veggie" value=" Onions"> Onions<br>
+                        <input type="checkbox" name="veggie" value=" Mushrooms"> Mushrooms<br>
+                        <input type="checkbox" name="veggie" value=" Green Pepper"> Green Pepper<br>
+                        <input type="checkbox" name="veggie" value=" Black Olives"> Black Olives<br>
+                        <input type="checkbox" name="veggie" value=" Spinach"> Spinach<br>
+                        <input type="checkbox" name="veggie" value=" Pineapple"> Pineapple<br>
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-lg">Bake That Pizza!</button>
+                </div>    
+                
+                </form>
+            </div> <!-- End Row 3 -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="receipt">
+                        <p class="label">Your order was placed for - </p>
+                        <p>Pizza Size: <span class="size"></span> Inch Pie</p>
+                        <p>Sauce: <span class="sauce"></span> Sauce</p>
+                        <p>Cheese: <span class="cheese"></span></p>
+                        <p>Meat: <span class="meat"></span></p>
+                        <p>Veggies: <span class="veggie"></span></p>
+                        <p class="label">Total Amount Due: $<span class="price"></span></p>
+                    </div>
+                </div>
+            </div> <!-- End Row 4 -->
     </div> <!-- End Container -->
   </body>
 </html>   
