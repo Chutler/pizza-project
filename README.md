@@ -17,7 +17,7 @@ Create a website for a pizza company where a user can choose one or more individ
 | Behavior | Input | Outcome |
 |---|---|---|
 | User orders a 14" pizza with sauce | User selects 14" size and Red Sauce  | Price = $14.00 - The pie is $14 and sauce adds no cost.|
-| User orders a 10" pizza with one cheese selection | User selects 10" pie, Red Sauce, and Mozzarella  | $12 - The pie is $10 and each cheese is $2 |
+| User orders a 10" pizza with one cheese selection | User selects 10" pie, Red Sauce, and Mozzarella  | Price = $12 - The pie is $10 and each cheese is $2 |
 | User orders an 18" pizza with bacon and black olives | User selects 18" pie, Red Sauce, Bacon, and Black Olives | Price = $23 - The pie is $18, the meat is $3 ea and the veggie is $2 ea  |
 User orders a 14" pizza with White Sauce, Provolone, Bacon, Green Peppers, and Onions | User selects 14" pie, White Sauce, Provolone, Bacon, Green Peppers, and Onions | Price = $23 - The pie is $14, the cheese is $2, the meat is $3, and two veggies total $4 |
 
