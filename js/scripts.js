@@ -59,7 +59,6 @@ $(document).ready(function(){
     var newOrder = new Pizza(orderSize, orderSauce, orderCheese, orderMeat, orderVeggie);
     var orderPrice = newOrder.price().toFixed(2);
   
-   
     $('.price').text(orderPrice);
     $('.size').text(newOrder.size);
     $('.sauce').text(newOrder.sauce);
