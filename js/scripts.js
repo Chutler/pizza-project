@@ -8,6 +8,9 @@ function Pizza(size, sauce, cheese, meat, veggie) {
   this.veggie = veggie;
 }
 
+// In the curriculum they use a comma after each key value pair in an object.
+// Are commas only used when when defining a literal object and not a constructor?
+
 Pizza.prototype.price = function() {
   var pieSize = this.size;
   var pieCheese = this.cheese.length;
