@@ -47,7 +47,7 @@ $(document).ready(function(){
     var orderCheese = [];
     var orderMeat = [];
     var orderVeggie = [];
-    console.log(orderSize, orderSauce, orderCheese, orderMeat, orderVeggie);
+    // console.log(orderSize, orderSauce, orderCheese, orderMeat, orderVeggie);
   
     $("input:checkbox[name=cheese]:checked").each(function () {
       orderCheese.push($(this).val());
