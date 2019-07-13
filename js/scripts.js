@@ -23,9 +23,9 @@ Pizza.prototype.price = function() {
   }
 }  
 
-// I tried to set up the logic in the protoype with statements like so: 
+// I initially tried to set up the logic in the protoype with statements like: 
 // return 10 + (this.cheese.length*2) + (this.Meat.length*3) + (this.veggie.length*2);
-// It seemed to choke so I had to set variables to those values...
+// I couldn't make it work so I had to set variables to those values. 
 // I still don't know why this.cheese.length wouldn't work as opposed to settting that value to a variable
 
 // AND I assume it's bad form to use a capitolized variable for size but 
